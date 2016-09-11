@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'index' => 'requests#index'
+  root :to => "requests#index"
+  #get 'index' => 'requests#index'
   #root welcome#index
 
 
