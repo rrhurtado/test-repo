@@ -9,14 +9,10 @@ class RequestsController < ApplicationController
   end
 
   def create
-  @request =
-      Request.new(:ip => @client_ip)
-  @request.save
-
-  #else
-    #redirect_to '/index'
-  #end
-end
+    @request =
+        Request.new(:ip => @client_ip)
+    @request.save
+  end
 
 
 end
