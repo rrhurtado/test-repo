@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="container">
+    <h1>Lista de accesos - app rrhurtado</h1>
+  </div>
+</div>
+
+<div class="requests">
+  <div class="container">
+    <%@requests.each do |request|%>
+        <div class="request">
+        <%= link_to_if false, "Fecha #{request.created_at} -  IP #{request.ip}" %>
+            <span class="btn-link"></span>
+        <% end %>
+      </div>
+   </div>
+</div>
